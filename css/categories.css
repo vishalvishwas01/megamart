@@ -1,0 +1,217 @@
+.categories-container {
+    width: screen;
+    height: static;
+    /* border: 2px solid red; */
+    padding-inline: 40px;
+    padding-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media (max-width: 480px) {
+    .categories-container {
+      padding-inline: 20px;
+    }
+  }
+  
+  .categories-header {
+    width: 1350px;
+    /* max-width: 90%; */
+    /* border: 2px solid blue; */
+    height: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 1423px) {
+    .categories-header {
+      width: 1080px;
+    }
+  }
+    @media (max-width: 1266px) {
+      .categories-header {
+        width: 800px;
+      }
+    }
+    @media (max-width: 964px) {
+      .categories-header {
+        width: 600px;
+      }
+    }
+  @media (max-width: 680px) {
+    .categories-header {
+      width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+      .categories-header {
+        width: 300px;
+      }
+    }
+  
+  .categories-heading {
+    font-family: "National Park", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.678);
+    text-underline-offset: 10px;
+    text-decoration-line: underline;
+    text-decoration-color: #3cb2fb;
+    text-decoration-thickness: 3px;
+  }
+  @media (max-width: 680px) {
+    .categories-heading {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 605px) {
+    .categories-heading {
+      text-decoration: none;
+    }
+  }
+  
+  .categories-para {
+    font-family: "National Park", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.678);
+    cursor: pointer;
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
+  @media (max-width: 680px) {
+    .categories-para {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 575px) {
+    .categories-para {
+     margin-top: 10px;
+    }
+  }
+  
+  .categories-para span {
+    color: #0099f8;
+    font-size: 22px;
+  }
+  
+  .categories-content {
+    /* border: 2px solid green; */
+    width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding-block: 20px;
+    border-bottom: 1px solid rgba(170, 167, 167, 0.466);
+    padding-top: 8px;
+  }
+  @media (max-width: 1580px) {
+    .categories-content {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1413px) {
+    .categories-content {
+      width: 90%;
+      gap: 35px;
+    }
+  }
+  @media (max-width: 1266px) {
+    .categories-content {
+      width: 75%;
+      gap: 60px;
+    }
+  }
+  @media (max-width: 1130px) {
+    .categories-content {
+      width: 80%;
+      gap: 60px;
+    }
+  }
+  @media (max-width: 1064px) {
+    .categories-content {
+      width: 85%;
+      gap: 60px;
+    }
+  }
+  @media (max-width: 1007px) {
+    .categories-content {
+      width: 90%;
+      gap: 60px;
+    }
+  }
+  @media (max-width: 719px) {
+    .categories-content {
+      width: 100%;
+    }
+  }
+  @media (max-width: 655px) {
+    .categories-content {
+      gap: 40px;
+    }
+  }
+  @media (max-width: 615px) {
+    .categories-content {
+      gap: 20px;
+    }
+  }
+  
+
+  .categories-content-body{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .categories-content-box {
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: 0.3s ease-in-out;
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .categories-content-box:hover {
+    transform: scale(1.01);
+    border: 1px solid #0099f8;
+  }
+
+  .categories-content-image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 80px;
+  }
+
+  .categories-content-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+
+  .categories-content-para{
+    font-family: "National Park", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.678);
+  }
+  

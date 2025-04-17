@@ -1,0 +1,100 @@
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background-color: #f7fcff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .cart-sidebar.active {
+    right: 0;
+  }
+  
+  .cart-sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-cart {
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cart-sidebar-body {
+    margin-top: 30px;
+    font-family: "National Park";
+  }
+  
+  .cart-sidebar-body h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0067ac;
+  }
+  
+  .cart-sidebar-body p {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .cart-item {
+    background-color: #e5f5ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #004f80;
+  }
+  
+  .cart-item-price {
+    font-size: 16px;
+    color: #2c2c2c;
+    margin-top: 5px;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #004f80;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #52bdff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "National Park";
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #0094dd;
+  }
+  

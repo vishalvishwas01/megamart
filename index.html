@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Mart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/cartsidebar.css">
+    <link rel="stylesheet" href="./css/smartphone.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/essentials.css">
+    <link rel="stylesheet" href="./css/electronics.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <section class="navbar-body">
+        <!-- cart side bar starts -->
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-sidebar-header">
+                <span class="close-cart" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-sidebar-body">
+                <h2>Your Cart</h2>
+
+                <div class="cart-item">
+                    <div class="cart-item-details">
+                        <div class="cart-item-name">Galaxy S22 Ultra</div>
+                        <div class="cart-item-price">₹32,999</div>
+                    </div>
+                </div>
+
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span>₹32,999</span>
+                </div>
+
+                <button class="checkout-btn">Checkout</button>
+            </div>
+
+        </div>
+        <!-- cart side bar ends -->
+
+        <!-- side bar starts -->
+
+        <div class="sidebar-menu" id="sidebarMenu">
+            <div class="sidebar-menu-header">
+                <span class="close-btn" id="closeSidebar">&times;</span>
+            </div>
+            <ul class="sidebar-menu-items">
+                <li>Home</li>
+                <li>Cart</li>
+                <li>Groceries</li>
+                <li>Deals</li>
+                <li>Orders</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <!-- side bar ends -->
+
+        <div class="navbar">
+            <div class="navbar-sidebar">
+                <div class="sidebar-logo">
+                    <svg width="60px" height="60px" viewBox="-3.4 -3.4 26.80 26.80" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" stroke="#9cd4f7" stroke-width="0.0002">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0">
+                            <rect x="-3.4" y="-3.4" width="26.80" height="26.80" rx="6.164" fill="#9cd4f7"
+                                strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill="#C1E7FF" fill-rule="evenodd"
+                                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="navbar-name">MegaMart</div>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-searchbar">
+                    <div class="navbar-searchbar-logo"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                    stroke="#52bdff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg></div>
+                    <input type="text" placeholder="Search essentials, groceries and more..."
+                        class="navbar-searchbar-textfield"></input>
+                </div>
+                <div class="signup-box">
+                    <div class="signup-logo"><svg width="40px" height="40px" viewBox="0 0 32 32" data-name="Layer 1"
+                            id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #6fbcec;
+                                        }
+                                    </style>
+                                </defs>
+                                <title></title>
+                                <path class="cls-1"
+                                    d="M22.82,20.55l-.63-.18c-1.06-.29-1.79-.51-1.91-1.75,2.83-3,2.79-5.67,2.73-8.47,0-.38,0-.76,0-1.15a7.1,7.1,0,0,0-7-7A7.1,7.1,0,0,0,9,9c0,.39,0,.77,0,1.15-.06,2.8-.1,5.45,2.73,8.47-.12,1.24-.85,1.46-1.91,1.75l-.63.18C5.61,21.74,2,25,2,29a1,1,0,0,0,2,0c0-3,3-5.61,5.82-6.55.16-.06.34-.1.52-.15A4.11,4.11,0,0,0,13.45,20a5.4,5.4,0,0,0,5.1,0,4.11,4.11,0,0,0,3.11,2.35c.18.05.36.09.52.15C25,23.39,28,26,28,29a1,1,0,0,0,2,0C30,25,26.39,21.74,22.82,20.55Zm-9.36-3C10.9,15,10.94,12.86,11,10.18,11,9.8,11,9.4,11,9A5,5,0,0,1,21,9c0,.4,0,.8,0,1.18,0,2.68.09,4.8-2.47,7.36A3.58,3.58,0,0,1,13.46,17.54Z">
+                                </path>
+                            </g>
+                        </svg></div>
+
+                    <div class="signup">
+                        Sign Up/Sign In
+                    </div>
+                </div>
+
+                <div class="cart-box">
+                    <div class="cart-logo"><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                                    stroke="#6fbcec" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg></div>
+
+                    <div class="cart">Cart</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar end -->
+
+    <!--  electronics start here -->
+    <section>
+        <div class="electronics-container">
+            <div class="electronics-header">
+                <div class="electronics-heading">Shop From Top <span style="color: #0099f8;">electronics</span>
+                </div>
+                <div class="electronics-para">View All <span>></span></div>
+            </div>
+
+            <div class="electronics-content">
+
+                <div class="swiper electronics-mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images//electronics1.png"></div>
+                        <div class="swiper-slide"><img src="./images//electronics2.png"></div>
+                        <div class="swiper-slide"><img src="./images//electronics3.png"></div>
+                        <div class="swiper-slide"><img src="./images//electronics1.png"></div>
+                        <div class="swiper-slide"><img src="./images//electronics2.png"></div>
+                        <div class="swiper-slide"><img src="./images//electronics3.png"></div>
+                    </div>
+                    <div class="swiper-paginations"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--  electronics end here -->
+
+    <!-- smartphones start here -->
+
+    <section>
+        <div class="smartphone-container">
+            <div class="smartphone-header">
+                <div class="smartphone-heading">Grab the best deal on <span style="color: #0099f8;">Smartphones</span>
+                </div>
+                <div class="smartphone-para">View All <span>></span></div>
+            </div>
+
+            <div class="smartphone-content">
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/S22R.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy S22 Ultra</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹32999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹74999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹32999</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M13.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M13 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹10499</div>
+                            <span class="smartphone-content-box-bottom-price2">₹14999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹4500</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M33.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M33 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹16999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹24999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹8000</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M53.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M53 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹31999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹40999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹9000</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+
+                        <div class="smartphone-content-box-top-image"><img src="./images/S22.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy S22 Ultra</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹67999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹85999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹18000</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- smartphones end here -->
+
+    <!-- categories start here -->
+
+    <section>
+        <div class="categories-container">
+            <div class="categories-header">
+                <div class="categories-heading">Shop From Top <span style="color: #0099f8;">Categories</span>
+                </div>
+                <div class="categories-para">View All <span>></span></div>
+            </div>
+
+            <div class="categories-content">
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/M13.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Mobile</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/cosmetics.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Cosmetics</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/electronics.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Electronics</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/furniture.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Furniture</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/watches.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Watches</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/decor.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Decore</div>
+                </div>
+
+                <div class="categories-content-body">
+                    <div class="categories-content-box">
+                        <div class="categories-content-image">
+                            <div><img src="./images/accessories.png"></div>
+                        </div>
+                    </div>
+                    <div class="categories-content-para">Accessories</div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- categories end here -->
+
+    <!-- essentials start here -->
+    <section>
+        <div class="essentials-container">
+            <div class="essentials-header">
+                <div class="essentials-heading">Shop From Top <span style="color: #0099f8;">essentials</span>
+                </div>
+                <div class="essentials-para">View All <span>></span></div>
+            </div>
+
+            <div class="essentials-content">
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/daliyuse.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Daily Essentials</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/vegetables.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Vegetables</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/fruits.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Fruits</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/Strawberry.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Strawberry</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/Mango.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Mango</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/Cherry.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Cherry</div>
+                </div>
+
+                <div class="essentials-content-body">
+                    <div class="essentials-content-box">
+                        <div class="essentials-content-image">
+                            <div><img src="./images/Banana.png"></div>
+                        </div>
+                    </div>
+                    <div class="essentials-content-para">Banana</div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- essentials end here -->
+
+     <!-- smartphones start here -->
+
+     <section>
+        <div class="smartphone-container">
+            <div class="smartphone-header">
+                <div class="smartphone-heading">Grab the best deal on <span style="color: #0099f8;">Smartphones</span>
+                </div>
+                <div class="smartphone-para">View All <span>></span></div>
+            </div>
+
+            <div class="smartphone-content">
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/S22R.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy S22 Ultra</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹32999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹74999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹32999</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M13.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M13 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹10499</div>
+                            <span class="smartphone-content-box-bottom-price2">₹14999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹4500</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M33.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M33 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹16999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹24999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹8000</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+                        <div class="smartphone-content-box-top-image"><img src="./images/M53.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy M53 (4GB | 64 gb)</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹31999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹40999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹9000</div>
+                    </div>
+                </div>
+
+                <div class="smartphone-content-box">
+                    <div class="smartphone-content-box-top">
+                        <div class="smartphone-content-box-top-discount-box">
+                            <div class="smartphone-content-box-top-discount">56% OFF</div>
+                        </div>
+
+                        <div class="smartphone-content-box-top-image"><img src="./images/S22.png"></div>
+                    </div>
+                    <div class="smartphone-content-box-bottom">
+                        <div class="smartphone-content-box-bottom-name">Galaxy S22 Ultra</div>
+                        <div class="smartphone-content-box-bottom-price-box">
+                            <div class="smartphone-content-box-bottom-price1">₹67999</div>
+                            <span class="smartphone-content-box-bottom-price2">₹85999</span>
+                        </div>
+                        <div class="smartphone-content-box-bottom-saving">Save - ₹18000</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- smartphones end here -->
+
+    <!-- footer start here -->
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section contact">
+                    <h2>MegaMart</h2>
+                    <p><strong>Contact Us</strong></p>
+                    <p><i class="fa fa-whatsapp"></i> WhatsApp<br> +1 202-918-2132</p>
+                    <p><i class="fa fa-phone"></i> Call Us<br> +1 202-918-2132</p>
+                    <p><strong>Download App</strong></p>
+                    <div class="app-buttons">
+                        <img src="./images/appstore.png" alt="App Store" />
+                        <img src="./images/googleplay.png" alt="Google Play" />
+                    </div>
+                </div>
+
+                <div class="footer-section categories">
+                    <h3>Most Popular Categories</h3>
+                    <ul>
+                        <li>Staples</li>
+                        <li>Beverages</li>
+                        <li>Personal Care</li>
+                        <li>Home Care</li>
+                        <li>Baby Care</li>
+                        <li>Vegetables & Fruits</li>
+                        <li>Snacks & Foods</li>
+                        <li>Dairy & Bakery</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section services">
+                    <h3>Customer Services</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Terms & Conditions</li>
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>E-waste Policy</li>
+                        <li>Cancellation & Return Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
+            </div>
+        </footer>
+
+    </section>
+    <!-- footer end here -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

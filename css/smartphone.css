@@ -1,0 +1,259 @@
+.smartphone-container {
+  width: screen;
+  height: static;
+  /* border: 2px solid red; */
+  padding-inline: 40px;
+  padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 480px) {
+  .smartphone-container {
+    padding-inline: 20px;
+  }
+}
+
+.smartphone-header {
+  width: 1350px;
+  /* max-width: 90%; */
+  /* border: 2px solid blue; */
+  height: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1423px) {
+  .smartphone-header {
+    width: 1080px;
+  }
+}
+  @media (max-width: 1266px) {
+    .smartphone-header {
+      width: 800px;
+    }
+  }
+  @media (max-width: 964px) {
+    .smartphone-header {
+      width: 600px;
+    }
+  }
+@media (max-width: 680px) {
+  .smartphone-header {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+    .smartphone-header {
+      width: 260px;
+    }
+  }
+
+.smartphone-heading {
+  font-family: "National Park", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.678);
+  text-underline-offset: 10px;
+  text-decoration-line: underline;
+  text-decoration-color: #3cb2fb;
+  text-decoration-thickness: 3px;
+}
+@media (max-width: 680px) {
+  .smartphone-heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .smartphone-heading {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+
+.smartphone-para {
+  font-family: "National Park", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.678);
+  cursor: pointer;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+@media (max-width: 680px) {
+  .smartphone-para {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .smartphone-para {
+   margin-top: 10px;
+  }
+}
+
+.smartphone-para span {
+  color: #0099f8;
+  font-size: 22px;
+}
+
+.smartphone-content {
+  /* border: 2px solid green; */
+  width: 1350px;
+  /* max-width: 90%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
+  padding-block: 20px;
+  border-bottom: 1px solid rgba(170, 167, 167, 0.466);
+  padding-top: 8px;
+}
+@media (max-width: 1580px) {
+  .smartphone-content {
+    width: 1350px;
+  }
+}
+@media (max-width: 1423px) {
+  .smartphone-content {
+    width: 90%;
+  }
+}
+@media (max-width: 680px) {
+  .smartphone-content {
+    width: 100%;
+  }
+}
+
+/* .bbh{
+  border: 2px solid blue;
+  width: 1350px;
+  height: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+} */
+
+.smartphone-content-box {
+  border: 1px solid #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  width: 250px;
+  height: 350px;
+  transition: 0.3s ease-in-out;
+}
+
+.smartphone-content-box:hover {
+  transform: scale(1.01);
+  border: 1px solid #0099f8;
+}
+
+.smartphone-content-box-top {
+  width: 100%;
+  height: 65%;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.smartphone-content-box-top-discount-box {
+  width: 60px;
+  height: 65px;
+  background-color: #0099f8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.smartphone-content-box-top-discount {
+  text-align: center;
+  font-family: "National Park", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.smartphone-content-box-top-image {
+  /* border: 1px solid red; */
+  height: 150px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smartphone-content-box-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  /* border: 2px solid rgb(0, 255, 76); */
+}
+
+.smartphone-content-box-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 90%;
+  height: 35%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.smartphone-content-box-bottom-name {
+  font-family: "National Park", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.smartphone-content-box-bottom-price-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.smartphone-content-box-bottom-price1 {
+  font-family: "National Park", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.smartphone-content-box-bottom-price2 {
+  font-family: "National Park", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: line-through;
+}
+
+.smartphone-content-box-bottom-saving {
+  font-family: "National Park", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  color: rgba(5, 138, 23, 0.829);
+  border-top: 1px solid rgba(170, 167, 167, 0.466);
+  padding-top: 8px;
+}
